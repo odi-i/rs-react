@@ -58,7 +58,7 @@ export const generateCards = (n = 100) => {
   return cards;
 };
 
-const generateCard = (i: Number) => ({
+const generateCard = (i: number) => ({
   id: i,
   name: name[getRandom()],
   description: description[getRandom()],
