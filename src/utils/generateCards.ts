@@ -9,6 +9,16 @@ import img8 from '../assets/images/8.jpg';
 import img9 from '../assets/images/9.jpg';
 import img10 from '../assets/images/10.jpg';
 
+interface Props {
+  id: Number;
+  name: string;
+  description: string;
+  color: string;
+  price: number;
+  rating: number;
+  src: string;
+}
+
 const name = [
   'Компьютер',
   'Телефон',
@@ -49,7 +59,7 @@ const color = [
 ];
 const src = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
-export const generateCards = (n = 100) => {
+export const generateCards = (n = 100): Props[] => {
   const cards = [];
   for (let i = 0; i < n; i++) {
     cards.push(generateCard(i));
@@ -58,7 +68,7 @@ export const generateCards = (n = 100) => {
   return cards;
 };
 
-const generateCard = (i: number) => ({
+const generateCard = (i: number): Props => ({
   id: i,
   name: name[getRandom()],
   description: description[getRandom()],
@@ -68,6 +78,6 @@ const generateCard = (i: number) => ({
   src: src[getRandom()],
 });
 
-const getRandom = () => {
+const getRandom = (): number => {
   return Math.round(Math.random() * (9 - 0) + 0);
 };
