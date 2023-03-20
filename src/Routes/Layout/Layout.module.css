@@ -1,0 +1,29 @@
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+header .menu {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+header .menu__link {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+header img {
+  width: 100px;
+}
+
+.active {
+  text-decoration: none;
+  color: rgb(74, 66, 222);
+}/*# sourceMappingURL=Layout.module.css.map */
