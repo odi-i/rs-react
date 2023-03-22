@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './CardItem.module.scss';
 
 interface Props {
-  id: Number;
+  id: number;
   name: string;
   description: string;
   color: string;

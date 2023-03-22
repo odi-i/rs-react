@@ -4,7 +4,7 @@ import CardItem from '../../components/CardItem/CardItem';
 import styles from './Cards.module.scss';
 
 interface Props {
-  id: Number;
+  id: number;
   name: string;
   description: string;
   color: string;
