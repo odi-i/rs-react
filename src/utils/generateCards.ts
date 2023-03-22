@@ -10,7 +10,7 @@ import img9 from '../assets/images/9.jpg';
 import img10 from '../assets/images/10.jpg';
 
 interface Props {
-  id: Number;
+  id: number;
   name: string;
   description: string;
   color: string;
