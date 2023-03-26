@@ -1,8 +1,8 @@
 import React, { ChangeEvent, Component } from 'react';
 import styles from './SearchBar.module.scss';
 
-export default class SearchBar extends Component<{}> {
-  constructor(props: {}) {
+export default class SearchBar extends Component<Record<string, never>> {
+  constructor(props: Record<string, never>) {
     super(props);
     this.onUnload = this.onUnload.bind(this);
   }
