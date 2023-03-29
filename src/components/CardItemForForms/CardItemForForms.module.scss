@@ -1,0 +1,82 @@
+.card {
+   width: 215px;
+   height: 329px;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   border-radius: 10px;
+   background-color: #00cc991e;
+}
+
+.card__img {
+   width: 200px;
+   height: 200px;
+   border-radius: 10px;
+   margin: 5px 0 5px 0;
+   align-self: center;
+   object-fit: cover;
+}
+
+.card__name {
+   font-size: 22px;
+   padding: 0 0 0 10px;
+   margin: 0 0 5px 0;
+}
+
+.card__desc {
+   font-size: 15px;
+   padding: 0 0 0 10px;
+   margin: 0 0 5px 0;
+   color: rgba(0, 0, 0, 0.384);
+}
+
+.card__color {
+   padding: 0 0 0 10px;
+   margin: 0 0 5px 0;
+   display: flex;
+   align-items: center;
+}
+
+.color__desc {
+   margin: 0 10px 0 0;
+}
+
+.color__mean {
+   font-size: 15px;
+   color: rgba(0, 0, 0, 0.384);
+   padding: 3px 0 0 0;
+}
+
+.card__price {
+   padding: 0 0 0 10px;
+   margin: 0 0 5px 0;
+   display: flex;
+   align-items: center;
+}
+
+.price__desc {
+   margin: 0 10px 0 0;
+}
+
+.price__mean {
+   font-size: 15px;
+   color: rgba(0, 0, 0, 0.384);
+   padding: 3px 0 0 0;
+}
+
+.card__rating {
+   padding: 0 0 0 10px;
+   margin: 0 0 5px 0;
+   display: flex;
+   align-items: center;
+}
+
+.rating__desc {
+   margin: 0 10px 0 0;
+}
+
+.rating__mean {
+   font-size: 15px;
+   color: rgba(0, 0, 0, 0.384);
+   padding: 3px 0 0 0;
+}

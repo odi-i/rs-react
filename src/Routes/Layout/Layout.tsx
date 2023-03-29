@@ -17,6 +17,12 @@ export default class Layout extends Component {
             </NavLink>
             <NavLink
               className={({ isActive }) => (isActive ? styles.active : styles.menu__link)}
+              to={'/forms'}
+            >
+              Forms
+            </NavLink>
+            <NavLink
+              className={({ isActive }) => (isActive ? styles.active : styles.menu__link)}
               to={'/about'}
             >
               About us

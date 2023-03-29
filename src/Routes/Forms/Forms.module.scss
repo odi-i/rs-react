@@ -1,0 +1,134 @@
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.form {
+   font-family: Comic Sans MS;
+   // color: #762dff;
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.input {
+   padding: 0 10px;
+   width: 300px;
+   height: 40px;
+   background: none;
+   border: 2px solid #762dff;
+   border-radius: 10px;
+   box-sizing: border-box;
+   font-size: 20px;
+   color: #762dff;
+   outline: none;
+}
+
+.first_inputs {
+   display: flex;
+   justify-content: space-evenly;
+   margin: 30px 0;
+}
+
+.second_inputs {
+   display: flex;
+   justify-content: space-evenly;
+   margin: 100px 0;
+}
+
+.checkbox_input {
+   margin: 0 0 0 5px;
+}
+
+.radio {
+   display: flex;
+   flex-direction: column;
+
+   &_input {
+      margin: 0 5px 0 0;
+   }
+}
+
+.button {
+   width: 200px;
+   height: 50px;
+   align-self: center;
+   border-radius: 15px;
+   border: 2px solid #762dff;
+   background-color: #762dff;
+   font-size: 20px;
+   color: #eee;
+   font-family: Comic Sans MS;
+}
+
+.cards {
+   flex-grow: 1;
+   display: grid;
+   grid-template-columns: repeat(3, 215px);
+   grid-column-gap: 10px;
+   grid-row-gap: 10px;
+}
+
+
+//////////// File
+
+.input_file {
+   position: relative;
+   display: inline-block;
+}
+
+.input_file_btn {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+   outline: none;
+   text-decoration: none;
+   font-size: 14px;
+   vertical-align: middle;
+   color: rgb(255 255 255);
+   text-align: center;
+   border-radius: 4px;
+   background-color: #762dff;
+   line-height: 22px;
+   height: 40px;
+   padding: 10px 20px;
+   box-sizing: border-box;
+   border: none;
+   margin: 0;
+   transition: background-color 0.2s;
+}
+
+.input_file_text {
+   padding: 0 10px;
+   line-height: 40px;
+   display: inline-block;
+}
+
+.input_file input[type=file] {
+   position: absolute;
+   z-index: -1;
+   opacity: 0;
+   display: block;
+   width: 0;
+   height: 0;
+}
+
+/* Focus */
+.input_file input[type=file]:focus+.input_file_btn {
+   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+/* Hover/active */
+.input_file:hover .input_file_btn {
+   background-color: cornflowerblue;
+}
+
+.input_file:active .input_file_btn {
+   background-color: rgb(157, 183, 230);
+}
+
+/* Disabled */
+.input_file input[type=file]:disabled+.input_file_btn {
+   background-color: #eee;
+}
